@@ -10,11 +10,7 @@ int gcd(int a, int b) {
 void Rational::reduce() {
 	int n = gcd(num, den);
 	num /= n;
-	den /= n;
-	if (den < 0) {
-		num = -num;
-		den = -den;
-	}	
+	den /= n;	
 }
 
 Rational::Rational() {
